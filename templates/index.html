@@ -2,14 +2,14 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8">
-        <title>{{ name }}'s Watchlist</title>
+        <title>{{ user.name }}'s Watchlist</title>
         <link rel="icon" href="{{ url_for('static', filename='Ultraman.ico')}}" >
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     </head>
     <body>
         <h2>
             <img alt="Ultraman" class="Ultraman" src="{{ url_for('static', filename='images/超人.png')}}">
-            {{ name }}'s Watchlist
+            {{ user.name }}'s Watchlist
         </h2>
         <p>{{ movies|length }} Titles</p>
         <ul class="movie-list">
