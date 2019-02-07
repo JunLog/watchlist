@@ -1,3 +1,13 @@
 {
-    "python.pythonPath": "C:\\Users\\Administrator\\.virtualenvs\\watchlist-I6-H6mlb\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\Administrator\\.virtualenvs\\watchlist-I6-H6mlb\\Scripts\\python.exe",
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test*.py"
+    ],
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.unittestEnabled": true
 }

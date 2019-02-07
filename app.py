@@ -21,8 +21,6 @@ db = SQLAlchemy(app)
 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
-login_manager.login_message = '请先登录'
-
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
@@ -122,9 +120,9 @@ def index():
         year = request.form.get('year')
 
         if not title or not year or len(year)>4 or len(year)<4 or len(title)>60:
-            flash("Invalid input")#无效输入
+            flash("Invalid input") # 无效输入
             return redirect(url_for('index'))
-            
+
         movie = Movie(title=title, year=year)
         db.session.add(movie)
         db.session.commit()
