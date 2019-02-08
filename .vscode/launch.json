@@ -10,14 +10,13 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "app.py"
+                //"FLASK_APP": //"app.py"
             },
             "args": [
-                "run",
-                "--no-debugger",
-                "--no-reload"
+                "run"
             ],
-            "jinja": true
+            "jinja": true,
+            "envFile": "${workspaceFolder}/.env",
         }
     ]
 }
